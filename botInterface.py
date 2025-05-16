@@ -1,7 +1,7 @@
 import streamlit as st
 import random
 import time
-from RAG import ChatBots
+from RAG import ChatBot
 
 
 chat = ChatBot()

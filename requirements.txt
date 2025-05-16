@@ -1,0 +1,38 @@
+# Librerías para procesamiento de datos
+numpy
+scipy
+
+# Visualización
+matplotlib
+seaborn
+matplotlib
+
+# Preprocesamiento de datos
+scikit-learn
+opencv-python  # Para imágenes
+nltk # Para procesamiento de lenguaje natural
+spacy  # Alternativa para NLP
+missingno 
+
+# Procesamiento de lenguaje natural
+vaderSentiment
+tf-keras
+transformers
+huggingface_hub
+tqdm
+ipywidgets
+groq
+pyspellchecker 
+ollama
+streamlit
+langchain_core
+langchain
+langchain-community
+sentence-transformers
+faiss-cpu 
+
+# Para paralelizar tareas
+pandarallel 
+nltk
+
+

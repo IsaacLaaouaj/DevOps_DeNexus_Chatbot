@@ -8,7 +8,13 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
+from dotenv import load_dotenv
 
+# Cargar las variables del .env
+load_dotenv()
+
+# Acceder a la API key
+api_key = os.getenv("api_key")
 
 class ChatBot():
 
@@ -62,7 +68,7 @@ class ChatBot():
 
     def llamaResponse(self, query):
         client = Groq(
-            api_key='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',
+            api_key=api_key,
         )
 
         chat_completion = client.chat.completions.create(
