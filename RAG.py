@@ -13,6 +13,7 @@ from dotenv import load_dotenv
 # Cargar las variables del .env
 load_dotenv()
 
+
 # Acceder a la API key
 api_key = os.getenv("api_key")
 
@@ -55,10 +56,9 @@ class ChatBot():
             print("Generando índice FAISS...")
             with tqdm(total=len(self.documents), desc="Procesando documentos") as pbar:
                 self.faiss_index = FAISS.from_documents(
-                    self.documents,
-                    embedding=embeddings,
-                    progress_callback=lambda: pbar.update(1)
-                )
+                self.documents,
+                embedding=embeddings
+            )
             self.faiss_index.save_local("faiss_index")
             print("Índice FAISS generado y guardado.")
 
