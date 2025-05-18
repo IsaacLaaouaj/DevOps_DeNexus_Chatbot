@@ -9,9 +9,24 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
 from dotenv import load_dotenv
+import logging
+import sys
+
+
+# Configurar logging a stdout
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Ejemplo de uso
+logger.info("Chatbot iniciado")
+logger.warning("Esto es un warning")
+logger.error("Esto es un error")
+
 
 # Cargar las variables del .env
 load_dotenv()
+
+
 
 
 # Acceder a la API key

@@ -10,5 +10,5 @@ langchain-community
 sentence-transformers
 faiss-cpu
 pymongo
-
+kafka-python
 
